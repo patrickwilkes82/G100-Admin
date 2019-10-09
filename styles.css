@@ -21,6 +21,19 @@ body{
   height: 100%;
 }
 
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg-color);
+  outline: 1px solid grey;
+}
+
 .wrapper .top_navbar{
 	width: 100%;
 	height: 65px;
@@ -40,9 +53,9 @@ body{
 	display: block;
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
-  	font-size: 20px;
+  	font-size: 24px;
   	color: #fff;
-  	padding: 20px 0;
+    padding: 20px 0;
 }
 
 .wrapper .top_navbar .top_menu{
@@ -79,6 +92,34 @@ body{
     color: #fff;
     margin: 0 5px;
     cursor: pointer;
+}
+
+.wrapper .top_navbar .right_info .config_menu {
+  position: absolute;
+  top: 52px;
+  right: 45px;
+  width: 200px;
+  background: var(--main-bg-color);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.wrapper .top_navbar .right_info .config_menu span {
+ margin-left: 175px;
+ font-size: 20px;
+}
+
+.wrapper .top_navbar .right_info .config_menu span:hover {
+  cursor: pointer;
+}
+
+.wrapper .top_navbar .right_info .config_menu.open {
+  display: block;
+}
+
+.wrapper .top_navbar .right_info .config_menu li {
+  padding: 5px 15px;
 }
 
 .main_body .sidebar_menu{
