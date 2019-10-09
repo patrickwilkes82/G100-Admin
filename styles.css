@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Ubuntu:400,500,700&display=swap');
 
+:root {
+  --main-bg-color: steelblue;
+  --hover-bg-color: #5343c7;
+  --active-bg-color: #22119d;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -26,8 +32,8 @@ body{
 .wrapper .top_navbar .logo{
 	width: 250px;
 	height: 100%;
-	background: #3421C0;
-	border-bottom: 1px solid #22119d;
+  background: var(--main-bg-color);
+	border-bottom: 1px solid var(--hover-bg-color);
 }
 
 .wrapper .top_navbar .logo a{
@@ -51,7 +57,7 @@ body{
 
 .wrapper .top_navbar .top_menu .home_link a{
 	display: block;
-    background: #3421C0;
+  background: var(--main-bg-color);
     color: #fff;
     padding: 8px 15px;
     border-radius: 3px;
@@ -59,7 +65,7 @@ body{
 
 .wrapper .top_navbar .top_menu .home_link a:hover,
 .wrapper .top_navbar .right_info .icon_wrap:hover {
-    background: #5343c7;
+    background: var(--hover-bg-color);
 }
 
 .wrapper .top_navbar .right_info{
@@ -69,7 +75,7 @@ body{
 .wrapper .top_navbar .right_info .icon_wrap{
 	padding: 8px 15px;
     border-radius: 3px;
-	background: #3421C0;
+    background: var(--main-bg-color);
     color: #fff;
     margin: 0 5px;
     cursor: pointer;
@@ -79,10 +85,10 @@ body{
 	position: fixed;
   	top: 65px;
   	left: 0;
-  	background: #3421C0;
+  	background: var(--main-bg-color);
   	width: 250px;
   	height: 100%;
-  	transition: all 0.2s linear;
+  	transition: all 0.1s linear;
 }
 
 .main_body .sidebar_menu .inner__sidebar_menu{
@@ -91,7 +97,7 @@ body{
 }
 
 .main_body .sidebar_menu ul li a{
-  color: #7467d3;
+  color: #eee;
   font-size: 18px;
   padding: 20px 35px;
   display: block;
@@ -107,12 +113,12 @@ body{
 }
 
 .main_body .sidebar_menu ul li a:hover{
-  background: #5343c7;
+  background: var(--hover-bg-color);
   color: #fff;
 }
 
 .main_body .sidebar_menu ul li a.active{
-  background: #22119d;
+  background: var(--active-bg-color);
   color: #fff;
 }
 
@@ -139,7 +145,11 @@ body{
   width: 40px;
   border-radius: 50%;
   height: 40px;
-  background: #3421C0;
+  background: var(--main-bg-color);
+}
+
+.main_body .sidebar_menu .inner_hamburger:hover {
+  background: var(--hover-bg-color);
 }
 
 .main_body .sidebar_menu .hamburger .arrow{
@@ -156,7 +166,7 @@ body{
 	margin-top: 65px;
 	margin-left: 250px;
 	padding: 25px 40px;
-	transition: all 0.2s linear;
+	transition: all 0.1s linear;
 }
 
 .main_body .container .item_wrap{
