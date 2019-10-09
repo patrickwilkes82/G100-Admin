@@ -3,17 +3,19 @@
 function toggleMenu() {
     const menuSize = document.getElementById('wrapper');
     menuSize.classList.toggle('active');
-    console.log('class toggled');
 }
 
 function toggleConfig() {
     const showConfigMenu = document.getElementById('config_menu');
+    let configButton = document.getElementById('configButton');
+    let wrapperOpacity = document.getElementById('wrapper');
     showConfigMenu.classList.toggle('open');
-    console.log('config menu toggled');
+    configButton.classList.toggle ('open');
 }
 
 function closeConfigMenu() {
     const closeConfigMenu = document.getElementById('config_menu');
+    let configButton = document.getElementById('configButton');
     closeConfigMenu.classList.remove('open');
-    console.log('all menus closed hopefully');
+    configButton.classList.remove('open');
 }

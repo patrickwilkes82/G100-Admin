@@ -94,6 +94,10 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+#configButton.open {
+  background: red;
+}
+
 .wrapper .top_navbar .right_info .config_menu {
   position: absolute;
   top: 52px;
@@ -106,8 +110,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wrapper .top_navbar .right_info .config_menu span {
- margin-left: 175px;
- font-size: 20px;
+ margin-left: 165px;
+ font-size: 24px;
 }
 
 .wrapper .top_navbar .right_info .config_menu span:hover {
@@ -120,6 +124,11 @@ body::-webkit-scrollbar-thumb {
 
 .wrapper .top_navbar .right_info .config_menu li {
   padding: 5px 15px;
+}
+
+.wrapper .top_navbar .right_info .config_menu li:hover {
+  background-color: var(--hover-bg-color);
+  cursor: pointer;
 }
 
 .main_body .sidebar_menu{
