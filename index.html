@@ -22,10 +22,19 @@
 				</a>
 			</div>
 			<div class="right_info">
-				<div class="icon_wrap">
+				<div class="icon_wrap" id='notificationButton' onclick='toggleNotifications()'>
 					<div class="icon">
 						<i class="fas fa-bell"></i>
 					</div>
+				</div>
+				<div class="notification_menu" id="notification_menu">
+					<div onclick='closeNotifications()'><span><i class="far fa-times-circle"></i></span></div>
+						<ul>
+							<li>Menu Item 1</li>
+							<li>Menu Item 2</li>
+							<li>Menu Item 3</li>
+							<li>Menu Item 4</li>
+						</ul>
 				</div>
 				<div class="icon_wrap" id='configButton' onclick="toggleConfig()">
 					<div class="icon">

@@ -21,6 +21,7 @@ body{
   height: 100%;
 }
 
+/* ### CUSTOM SCROLLBAR ### */
 body::-webkit-scrollbar {
     width: 0.8em;
 }
@@ -46,14 +47,13 @@ body::-webkit-scrollbar-thumb {
 	width: 250px;
 	height: 100%;
   background: var(--main-bg-color);
-	border-bottom: 1px solid var(--hover-bg-color);
+  border-bottom: 1px solid var(--hover-bg-color);
 }
 
 .wrapper .top_navbar .logo a{
 	display: block;
     text-align: center;
-    font-family: 'Montserrat Subrayada', sans-serif;
-  	font-size: 24px;
+  	font-size: 28px;
   	color: #fff;
     padding: 20px 0;
 }
@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 }
 
-.wrapper .top_navbar .right_info .icon_wrap{
+.icon_wrap{
 	padding: 8px 15px;
     border-radius: 3px;
     background: var(--main-bg-color);
@@ -94,11 +94,48 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+#notificationButton.open {
+  background: var(--active-bg-color);
+}
+
 #configButton.open {
   background: var(--active-bg-color);
 }
 
-.wrapper .top_navbar .right_info .config_menu {
+.notification_menu {
+  position: absolute;
+  top: 52px;
+  right: 100px;
+  width: 200px;
+  background: var(--main-bg-color);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.notification_menu span {
+ margin-left: 165px;
+ font-size: 24px;
+}
+
+.notification_menu span:hover {
+  cursor: pointer;
+}
+
+.notification_menu.open {
+  display: block;
+}
+
+.notification_menu li {
+  padding: 5px 15px;
+}
+
+.notification_menu li:hover {
+  background-color: var(--hover-bg-color);
+  cursor: pointer;
+}
+
+.config_menu {
   position: absolute;
   top: 52px;
   right: 45px;
@@ -109,24 +146,24 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.wrapper .top_navbar .right_info .config_menu span {
+.config_menu span {
  margin-left: 165px;
  font-size: 24px;
 }
 
-.wrapper .top_navbar .right_info .config_menu span:hover {
+.config_menu span:hover {
   cursor: pointer;
 }
 
-.wrapper .top_navbar .right_info .config_menu.open {
+.config_menu.open {
   display: block;
 }
 
-.wrapper .top_navbar .right_info .config_menu li {
+.config_menu li {
   padding: 5px 15px;
 }
 
-.wrapper .top_navbar .right_info .config_menu li:hover {
+.config_menu li:hover {
   background-color: var(--hover-bg-color);
   cursor: pointer;
 }
