@@ -316,11 +316,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .detailsItem details[open] summary ~ * {
-  animation: sweep 1.0s ease-in-out;
+  animation: sweep .5s ease-in-out;
 }
 
-.detailsItem details p {
-  margin: 10px;
+.detailsItem p {
+  margin-top: 10px;
 }
 
 /* after adding active class */
