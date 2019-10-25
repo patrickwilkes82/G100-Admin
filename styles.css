@@ -305,27 +305,37 @@ body::-webkit-scrollbar-thumb {
   display: block;
   width: 75%;
   margin: 0 auto;
-  padding: 10px 15px;
 }
 
 .detailsItem details[open] {
   background-color: white;
-  border: 2px solid black;
-  border-radius: 10px;
-  box-shadow: 0px 0px 2px 0.5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px 0.5px #aaa;
+}
+
+.detailsItem details summary {
+  user-select: none;
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.detailsItem details[open] summary {
+  background-color: #333;
+  color: white;
 }
 
 .detailsItem details summary:hover {
   cursor: pointer;
-  background-color: white;
 }
 
 .detailsItem details[open] summary ~ * {
-  animation: sweep 0.6s ease-in-out;
+  animation: sweep 0.3s ease-in-out;
 }
 
 .detailsItem p {
-  margin-top: 10px;
+  padding: 10px 5px;
 }
 
 /* after adding active class */
