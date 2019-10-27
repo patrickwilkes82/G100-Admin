@@ -88,11 +88,11 @@
 		            </a>
 		          </li>
 		          <li>
-		            <a href="#">
-		              <span class="icon"><i class="fab fa-blogger"></i></span>
-		              <span class="list">Blogs</span>
-		            </a>
-		          </li>
+					<a href="#">
+						<span class="icon"><i class="fas fa-wrench"></i></span>
+						<span class="list">Troubleshooting</span>
+					</a>
+					</li>
 		          <li>
 		            <a href="#" class="active">
 		              <span class="icon"><i class="fas fa-sticky-note"></i></span>
@@ -117,6 +117,7 @@
 			<div class="search">
 				<input class ='searchInput' id="filterInput" type="text" placeholder="Search Notes...">
 			</div>
+			<!--OFFICE 365 NOTES-->
 			<ul id ="detailsList" class="detailsList">
 				<div class="listHeader">
 					<h3>Microsoft Office 365</h3>
@@ -124,25 +125,33 @@
 				<li class="detailsItem">
 					<details>
 						<summary>Creating A New User</summary>
-						<p> - All Office 365 users are created when a new user is created in Active Directory.</p>
-						<p> - This is made possible by an ADSync tool which runs every 30 minutes on the SIGMAPSYNC server.</p>
+						<p>All Office 365 users are created when a new user is created in Active Directory.</p>
+						<p>This is made possible by an ADSync tool which runs every 30 minutes on the SIGMAPSYNC server.</p>
 					</details>
 				</li>
 				<li class="detailsItem">
 					<details>
 						<summary>Assigning & Removing Licenses</summary>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
+						<p>Office 365 accounts require licenses to access any account app or data. By default no license is assigned upon account creation.</p>
+						<p>To assign or remove a license to an account follow the procedure below:</p>
+						<p> - Go to the <a href="https://office.com" target="on_blank">Office 365 Dashboard.</a></p>
+						<p> - Click on the <b>Admin</b> app.</p>
+						<p> - Search for the user you wish to add or remove a license for.</p>
+						<p> - Go to the <i>Licenses</i>	tab and assign or remove the appropriate license required for the user.</p>
 					</details>
 				</li>
 				<li class="detailsItem">
 					<details>
 						<summary>Enabling & Blocking Sign-In</summary>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
+						<p>Sign-In must be enabled for any user to access their Office 365 account. By default an account is enabled when created</p>
+						<p>To enable or block sign in to an Office 365 account follow the procedure below:</p>
 					</details>
 				</li>
 				<li class="detailsItem">
 					<details>
 						<summary>Downloading & Installing Microsoft Office Apps</summary>
+						<p>Certain Office 365 licenses include access to desktop Office apps.</p>
+						<p>To download and install Office apps to a device please follow the procedure below:</p>
 						<p> - Go to the <a href="https://office.com" target="on_blank">Office 365 Dashboard</a></p>
 						<p> - Login with Office 365 account credentials</p>
 						<p> - Click on the <i>Install Office</i> button in the upper right corner and select <i>Install office Apps</i></p>
@@ -153,7 +162,7 @@
 					<details>
 						<summary>Updating Office Apps</summary>
 						<p>Microsoft Office 365 apps are scheduled to be updated on a monthly basis automatically.</p>
-						<p>To manually download and install Office app updates please following the procedure below:</p>
+						<p>To manually download and install Office app updates please follow the procedure below:</p>
 						<p> - In any Office app go to <i>File > Office Account > Office Updates > Update Now</i></p>
 						<p> - Office will check if any updates are available and download them automatically</p>
 						<p> - All Office apps must be installed for update to complete</p>
@@ -165,15 +174,7 @@
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
 					</details>
 				</li>
-				<li class="detailsItem">
-					<details>
-						<summary>Skype Sign In Errors</summary>
-						<p> - RegEdit fix</p>
-						<p> - Check mispelling of email address or password</p>
-						<p> - Check Microsoft Office 365 Health Status <a href="https://office.com" target="on_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
-					</details>
-				</li>
-
+				<!--BOX NOTES-->
 				<div class="listHeader">
 					<h3>Box</h3>
 				</div>
@@ -201,7 +202,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
 						</details>
 				</li>
-
+				<!--EGNYTE NOTES-->
 				<div class="listHeader">
 					<h3>Egnyte</h3>
 				</div>
@@ -229,7 +230,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
 						</details>
 				</li>
-
+				<!--ZOOM NOTES-->
 				<div class="listHeader">
 					<h3>Zoom</h3>
 				</div>
@@ -257,7 +258,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
 						</details>
 				</li>
-
+				<!--ONELOGIN NOTES-->
 				<div class="listHeader">
 					<h3>OneLogin</h3>
 				</div>
@@ -285,7 +286,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat doloremque minus tempore tempora voluptates dicta pariatur veniam consectetur voluptatibus quod at optio facilis, et nisi illo neque earum doloribus.</p>
 						</details>
 				</li>
-
+				<!--WINDOWS NOTES-->
 				<div class="listHeader">
 					<h3>Microsoft Windows</h3>
 				</div>
