@@ -307,6 +307,12 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
+.detailsItem details summary::-webkit-details-marker {
+  background-color: #333;
+  color: white;
+  padding: 3px;
+}
+
 .detailsItem details[open] {
   background-color: white;
   border-radius: 5px;
