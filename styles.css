@@ -284,7 +284,7 @@ section article {
 }
 
 .articleList {
-  padding-left: 15px;
+  padding: 0px 15px;
 }
 
 .articleList li {
@@ -299,6 +299,45 @@ section article {
 
 .status i {
   padding-left: 10px;
+}
+
+.result {
+  text-align: center;
+}
+
+.result input {
+  margin: 15px 0px;
+  width: 275px;
+  line-height: 22px;
+}
+
+.result button {
+  width: 25px;
+  height: 25px;
+  margin-left: -16px;
+}
+
+.pwSubmit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 5px;
+  background-color: #FF5722;
+  border: 1px solid black;
+}
+
+.pwSubmit:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 0.5px #333;
+  transition: 0.1s;
+}
+
+.pwLength {
+  width: 35px;
+}
+
+input[type="checkbox"] {
+  background-color: blue;
 }
 
 .searchInput{

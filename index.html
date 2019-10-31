@@ -201,10 +201,69 @@
 					</ul>
 				</article>
 				<article class='two'>
-					<h2 class="articleHeader"></h2>
+					<h2 class="articleHeader">Server Status</h2>
+					<ul class="articleList">
+						<li>
+							<span>G1H-DC01</span>
+							<i class="fas fa-info-circle" style="color:limegreen;cursor:help;" title="Normal"></i>
+							<!--<i class="fas fa-info-circle" style="color: orange;cursor:help;" title="Intermittent Issues"></i>-->
+							<!--<i class="fas fa-info-circle" style="color:red;cursor:help;" title="Outage"></i>-->
+						</li>
+						<li>
+							<span>SSA-ADC01</span>
+							<i class="fas fa-info-circle" style="color:limegreen;cursor:help;" title="Normal"></i>
+							<!--<i class="fas fa-info-circle" style="color: orange;cursor:help;" title="Intermittent Issues"></i>-->
+							<!--<i class="fas fa-info-circle" style="color:red;cursor:help;" title="Outage"></i>-->
+						</li>
+						<li>
+							<span>SIGMAPSYNC</span>
+							<i class="fas fa-info-circle" style="color:limegreen;cursor:help;" title="Normal"></i>
+							<!--<i class="fas fa-info-circle" style="color: orange;cursor:help;" title="Intermittent Issues"></i>-->
+							<!--<i class="fas fa-info-circle" style="color:red;cursor:help;" title="Outage"></i>-->
+						</li>
+						<li>
+							<span>FINANCE</span>
+							<i class="fas fa-info-circle" style="color:limegreen;cursor:help;" title="Normal"></i>
+							<!--<i class="fas fa-info-circle" style="color: orange;cursor:help;" title="Intermittent Issues"></i>-->
+							<!--<i class="fas fa-info-circle" style="color:red;cursor:help;" title="Outage"></i>-->
+						</li>
+						<li>
+							<span>ESXi Server</span>
+							<i class="fas fa-info-circle" style="color:limegreen;cursor:help;" title="Normal"></i>
+							<!--<i class="fas fa-info-circle" style="color: orange;cursor:help;" title="Intermittent Issues"></i>-->
+							<!--<i class="fas fa-info-circle" style="color:red;cursor:help;" title="Outage"></i>-->
+						</li>
+					</ul>
 				</article>
 				<article class='three'>
-					<h2 class="articleHeader"></h2>
+					<h2 class="articleHeader">Password Generator</h2>
+					<div class='result'>
+						<input type="text" id='result'>
+						<button id='copy' title='Copy Password to Clipboard'><i class="far fa-copy"></i></button>
+					</div>
+					<ul class="articleList">
+						<li>
+							<span>Password Length</span>
+							<input type="text" class="pwLength" id="pwLength">
+						</li>
+						<li>
+							<span>Uppercase Characters</span>
+							<input type="checkbox" name="uppercase" id="uppercase" checked>
+						</li>
+						<li>
+							<span>Lowercase Characters</span>
+							<input type="checkbox" name="lowercase" id="lowercase" checked>
+						</li>
+						<li>
+							<span>Numbers</span>
+							<input type="checkbox" name="numbers" id="numbers" checked>
+						</li>
+						<li>
+							<span>Special Characters</span>
+							<input type="checkbox" name="specials" id="specials" checked>
+						</li>
+					</ul>
+					<button class='pwSubmit' id='pwSubmit'>Generate Password</button>
 				</article>
 				<article class='four'>
 					<h2 class="articleHeader"></h2>
@@ -222,4 +281,5 @@
 	
 </body>
 <script src="js/scripts.js"></script>
+<script src="js/passGen.js"></script>
 </html>
