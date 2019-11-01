@@ -238,29 +238,29 @@
 				<article class='three'>
 					<h2 class="articleHeader">Password Generator</h2>
 					<div class='result'>
-						<input type="text" id='result'>
-						<button id='copy' title='Copy Password to Clipboard'><i class="far fa-copy"></i></button>
+						<span id='pwResult'></span>
+						<button id='pwClipboard' title='Copy Password to Clipboard'><i class="far fa-copy"></i></button>
 					</div>
 					<ul class="articleList">
 						<li>
 							<span>Password Length</span>
-							<input type="text" class="pwLength" id="pwLength">
+							<input type="number" class="pwLength" id="pwLength" min='4' max='20' value='12'>
 						</li>
 						<li>
 							<span>Uppercase Characters</span>
-							<input type="checkbox" name="uppercase" id="uppercase" checked>
+							<input type="checkbox" name="pwUppercase" id="pwUppercase" checked>
 						</li>
 						<li>
 							<span>Lowercase Characters</span>
-							<input type="checkbox" name="lowercase" id="lowercase" checked>
+							<input type="checkbox" name="pwLowercase" id="pwLowercase" checked>
 						</li>
 						<li>
 							<span>Numbers</span>
-							<input type="checkbox" name="numbers" id="numbers" checked>
+							<input type="checkbox" name="pwNumber" id="pwNumber" checked>
 						</li>
 						<li>
 							<span>Special Characters</span>
-							<input type="checkbox" name="specials" id="specials" checked>
+							<input type="checkbox" name="pwSpecial" id="pwSpecial" checked>
 						</li>
 					</ul>
 					<button class='pwSubmit' id='pwSubmit'>Generate Password</button>

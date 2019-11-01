@@ -302,19 +302,27 @@ section article {
 }
 
 .result {
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  height: 40px;
+  width: 85%;
+  margin: 10px auto;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.result input {
-  margin: 15px 0px;
-  width: 275px;
-  line-height: 22px;
+#pwResult {
+  word-wrap: break-word;
+  width: calc(100% - 40px);
 }
 
 .result button {
-  width: 25px;
-  height: 25px;
-  margin-left: -16px;
+  width: 35px;
+  height: 35px;
 }
 
 .pwSubmit {
@@ -322,7 +330,7 @@ section article {
   margin: 0 auto;
   margin-top: 15px;
   padding: 5px;
-  background-color: #FF5722;
+  background-color: lightblue;
   border: 1px solid black;
 }
 
@@ -334,10 +342,6 @@ section article {
 
 .pwLength {
   width: 35px;
-}
-
-input[type="checkbox"] {
-  background-color: blue;
 }
 
 .searchInput{
