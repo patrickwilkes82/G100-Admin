@@ -301,6 +301,15 @@ section article {
   padding-left: 10px;
 }
 
+.status a {
+  color: black;
+  text-decoration: none;
+}
+
+.status a:visited {
+  color: black;
+}
+
 .result {
   display: flex;
   justify-content: flex-start;
@@ -411,7 +420,7 @@ section article {
 }
 
 .detailsItem details[open] summary ~ * {
-  animation: sweep 0.3s ease-in-out;
+  animation: sweep 0.1s ease-in-out;
 }
 
 .detailsItem p {

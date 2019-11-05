@@ -1,5 +1,10 @@
-//Toggle SideMenu Bar Class when clicking Arrow Button
+// Onload functions
 
+window.onload = function() {
+    testAlert();
+}
+
+//Toggle SideMenu Bar Class when clicking Arrow Button
 function toggleMenu() {
     const menuSize = document.getElementById('wrapper');
     menuSize.classList.toggle('active');
@@ -47,4 +52,10 @@ document.onkeydown = function(evt) {
     }
 };
 
-   
+//TEST SCRIPTS
+    setTimeout (
+        function testAlert() {
+            alert('Welcome');
+        },
+        5000
+    );
