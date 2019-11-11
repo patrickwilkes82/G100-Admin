@@ -265,15 +265,16 @@ section {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 section article {
   height: 300px;
-  width: 30%;
+  width: 250px;
   border: 1px solid black;
   border-radius: 3px;
-  margin-bottom: 25px;
+  margin: 10px 20px;
   background-color: #fff;
 }
 
@@ -284,7 +285,7 @@ section article {
 }
 
 .articleList {
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 
 .articleList li {
@@ -315,10 +316,10 @@ section article {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   padding: 15px 10px;
-  height: 40px;
+  height: 25px;
   width: 85%;
   margin: 10px auto;
   background-color: rgba(0, 0, 0, 0.2);
@@ -326,12 +327,18 @@ section article {
 
 #pwResult {
   word-wrap: break-word;
-  width: calc(100% - 40px);
+  width: calc(100% - 50px);
+  position: relative;
 }
 
 .result button {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50;
+  bottom: 0;
 }
 
 .pwSubmit {
