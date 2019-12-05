@@ -1,8 +1,8 @@
 // Onload functions
 
-window.onload = function() {
+/*window.onload = function() {
     testAlert();
-}
+} */
 
 //Toggle SideMenu Bar Class when clicking Arrow Button
 function toggleMenu() {
@@ -53,9 +53,9 @@ document.onkeydown = function(evt) {
 };
 
 //TEST SCRIPTS
-    setTimeout (
+    /* setTimeout (
         function testAlert() {
             alert('Welcome');
         },
         5000
-    );
+    ); */

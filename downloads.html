@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>G100 Admin</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="img/letter_g.png">
+	<script src="https://kit.fontawesome.com/8238af1149.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="wrapper" id='wrapper'>
+
+	<div class="top_navbar">
+		<div class="logo">
+			<a href="#">G100 Admin</a>
+		</div>
+		<div class="top_menu">
+			<div class="home_link">
+				<a href="#">
+					<span class="icon"><i class="fas fa-home"></i></span>
+					<span>Home</span>
+				</a>
+			</div>
+			<div class="right_info">
+				<div class="icon_wrap" id='notificationButton' onclick='toggleNotifications()'>
+					<div class="icon">
+						<i class="fas fa-bell"></i>
+					</div>
+				</div>
+				<div class="notification_menu" id="notification_menu">
+					<div onclick='closeNotifications()'><span><i class="far fa-times-circle"></i></span></div>
+						<ul>
+							<li>Menu Item 1</li>
+							<li>Menu Item 2</li>
+							<li>Menu Item 3</li>
+							<li>Menu Item 4</li>
+						</ul>
+				</div>
+				<div class="icon_wrap" id='configButton' onclick="toggleConfig()">
+					<div class="icon">
+						<i class="fas fa-cog"></i>
+					</div>
+				</div>
+				<div class="config_menu" id="config_menu">
+					<div onclick='closeConfigMenu()'><span><i class="far fa-times-circle"></i></span></div>
+						<ul>
+							<li>Switch Theme</li>
+							<li>Menu Item 2</li>
+							<li>Menu Item 3</li>
+							<li>Menu Item 4</li>
+							<hr>
+							<li>Logout</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+
+
+<div class="main_body">
+		
+    <div class="sidebar_menu">
+        <div class="inner__sidebar_menu">
+            
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="icon">
+                      <i class="fas fa-border-all"></i></span>
+                  <span class="list">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fas fa-desktop"></i></span>
+                  <span class="list">Devices</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class='active'>
+                  <span class="icon"><i class="fas fa-download"></i></span>
+                  <span class="list">Downloads</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fas fa-link"></i></span>
+                  <span class="list">Links</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon"><i class="fas fa-wrench"></i></span>
+                  <span class="list">Troubleshooting</span>
+                </a>
+              </li>
+              <li>
+                <a href="notes.html">
+                  <span class="icon"><i class="fas fa-sticky-note"></i></span>
+                  <span class="list">Notes</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-terminal"></i></span>
+                    <span class="list">Scripts</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="hamburger" onClick='toggleMenu()'>
+                <div class="inner_hamburger">
+                    <span class="arrow">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="gridItem microsoft">
+            <h3>Microsoft Office</h3>
+            <ul class="downloadList">
+                <li>Microsoft Office Suite
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+                <li> Microsoft Teams
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+                <li>Skype for Business
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="gridItem file">
+            <h3>File Sharing</h3>
+            <ul class="downloadList">
+                <li>Box Drive
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+                <li>Box Edit
+                    <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                    <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+                <li>Box Tools
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+                <li>Egnyte Connect
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+                </li>
+            </ul>
+        </div>
+        <div class="gridItem zoom">
+            <h3>Zoom</h3>
+            <ul class="downloadList">
+              <li>Zoom Desktop
+                <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+              </li>
+              <li>Zoom Outlook Plugin
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+              </li>
+              <li>Zoom Rooms
+                <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+              </li>
+          </ul>
+        </div>
+        <div class="gridItem comm">
+            <h3>Communication</h3>
+            <ul class="downloadList">
+              <li>Slack
+                <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+              </li>
+          </ul>
+        </div>
+        <div class="gridItem web">
+            <h3>Web</h3>
+            <ul class="downloadList">
+              <li>Google Chrome
+                <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+              </li>
+              <li>Mozilla Firefox
+                  <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                  <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+              </li>
+          </ul>
+        </div>
+        <div class="gridItem misc">
+          <h3>Misc</h3>
+          <ul class="downloadList">
+            <li>7-Zip
+              <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+              <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+            </li>
+            <li>Notepad ++
+                <button><a href="#"> <i class="fab fa-windows" title='Download for Windows'></i></a></button>
+                <button><a href="#"><i class="fab fa-apple" title='Download for macOS'></i></a></button>
+            </li>
+
+        </ul>
+        </div>
+    </div>
+
+<!--WRAPPER-->    
+</div>
+<script src="js/scripts.js"></script>
+</body>
+</html>

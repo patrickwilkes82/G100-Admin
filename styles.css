@@ -261,6 +261,39 @@ body::-webkit-scrollbar-thumb {
 	transition: all 0.1s linear;
 }
 
+.grid-container {
+	width: calc(100% - 250px);
+	margin-top: 65px;
+	margin-left: 250px;
+	padding: 25px 40px;
+	transition: all 0.1s linear;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.gridItem {
+  font-size: 18px;
+}
+
+.gridItem h3 {
+  text-decoration: underline;
+}
+
+.downloadList li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.downloadList button {
+  padding: 2px;
+  border: none;
+}
+
+.downloadList button i {
+  color: var(--main-bg-color);
+}
+
 section {
   width: 100%;
   display: flex;
@@ -448,6 +481,8 @@ section article {
   width: calc(100% - 100px);
   margin-left: 100px;
 }
+
+
 
 
 @keyframes sweep {
