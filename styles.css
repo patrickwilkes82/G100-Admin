@@ -114,14 +114,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .downloadList li {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 .downloadList button {
-  width: 20px;
-  height: 20px;
+  padding: 3px 5px;
   border: none;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.downloadList button:hover {
+  cursor: pointer;
 }
 
 .downloadList button i {
@@ -295,28 +300,6 @@ section article {
 
 .detailsItem p {
   padding: 10px 5px;
-}
-
-/* after adding active class */
-.wrapper.active .sidebar_menu{
-  width: 100px;
-}
-
-.wrapper.active .hamburger .fa-long-arrow-alt-right{
-  display: block;
-}
-
-.wrapper.active .hamburger .fa-long-arrow-alt-left{
-  display: none;
-}
-
-.wrapper.active .sidebar_menu ul li a .list{
-  display: none;
-}
-
-.wrapper.active .main_body .container{
-  width: calc(100% - 100px);
-  margin-left: 100px;
 }
 
 @keyframes sweep {
